@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.blog-layout {
+    display: grid;
+    max-width: 1200px;
+    margin: 2rem auto;
+    gap: 1.5rem;
+    grid-template-columns: 280px 1fr;
+    grid-template-areas:
+        "header  header"
+        "sidebar main"
+        "footer  footer";
+}
+
+header, aside, main, footer, article {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+aside h2 {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 0.5rem;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li a {
+    display: block;
+    padding: 0.5rem 0;
+    color: #007bff;
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+article h2 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+article p {
+    margin-bottom: 1rem;
+}
+
+article a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: #333;
+    color: #aaa;
+}
+
+footer a {
+    color: #007bff;
+}
+
+@media (max-width: 799px) {
+    .blog-layout {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "sidebar"
+            "footer";
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
