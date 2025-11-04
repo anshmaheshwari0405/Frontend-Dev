@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e3f2fd, #fff);
+    color: #333;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 40px 0 20px;
+    color: #222;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px 50px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 30px 20px;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+    animation-fill-mode: both;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.featured {
+    background: linear-gradient(135deg, #ff9800, #ffc107);
+    color: white;
+    transform: scale(1.08);
+}
+
+.featured button {
+    background: white;
+    color: #ff9800;
+}
+
+.featured button:hover {
+    background: #fff3e0;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 2rem;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #777;
+}
+
+ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+ul li {
+    margin: 8px 0;
+    font-size: 0.95rem;
+}
+
+button {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #e68900;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 750px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .featured {
+        transform: scale(1);
+    }
+}

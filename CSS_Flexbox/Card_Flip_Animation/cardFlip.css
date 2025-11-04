@@ -1,0 +1,136 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e0f2fe, #93c5fd);
+}
+
+.wrapper {
+  text-align: center;
+  perspective: 1200px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  width: 320px;
+  height: 440px;
+  position: relative;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.9s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card-front {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transform: rotateY(0deg);
+}
+
+.card-front img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-bottom: 3px solid #2563eb;
+}
+
+.card-front h2 {
+  font-size: 1.6rem;
+  color: #1e3a8a;
+  padding: 15px 0;
+}
+
+.card-back {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: #fff;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+}
+
+.card-back h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #bfdbfe;
+}
+
+.card-back p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0f2fe;
+  margin-bottom: 20px;
+}
+
+.card-back button {
+  background: #facc15;
+  color: #1e3a8a;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-back button:hover {
+  background: #fde047;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(250, 204, 21, 0.7);
+}
+
+.card:hover {
+  filter: drop-shadow(0 0 20px rgba(37, 99, 235, 0.4));
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 270px;
+    height: 380px;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+}
