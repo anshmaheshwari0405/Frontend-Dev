@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e0f7fa, #f0f4ff);
+  color: #1e293b;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px 60px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #475569;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #2563eb;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 40px 20px;
+}
+
+.content-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 50px;
+  max-width: 1000px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.info {
+  flex: 1;
+}
+
+.info h1 {
+  font-size: 2rem;
+  color: #1e40af;
+  margin-bottom: 15px;
+}
+
+.info p {
+  color: #475569;
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #cbd5e1;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.5);
+  outline: none;
+}
+
+.contact-form button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #1e40af;
+  transform: scale(1.05);
+}
+
+.image img {
+  width: 350px;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.image img:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+  .content-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .image img {
+    width: 250px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+}

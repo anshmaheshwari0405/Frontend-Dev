@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box-Sizing Comparison</title>
+  <link rel="stylesheet" href="box-sizing-comparison.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Box-Sizing Comparison</h1>
+    <p class="desc">This example shows how <b>content-box</b> and <b>border-box</b> affect total element size.</p>
+
+    <div class="boxes">
+      <div class="box box1">
+        <h2>content-box</h2>
+        <p>The width doesn’t include padding or border, so the total box becomes larger.</p>
+      </div>
+
+      <div class="box box2">
+        <h2>border-box</h2>
+        <p>The width includes padding and border, so the total size stays fixed.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header p,
+footer p {
+  color: white;
+}
+
+header h1 {
+  color: white;
+}
+
+footer h1 {
+  color: white;
+}
+header h2 {
+  color: white;
+}
+
+footer h2 {
+  color: white;
+}
+
+main {
+  padding: 30px;
+}
+
+section {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  color: #334155;
+  line-height: 1.6;
+}
+
+.highlight {
+  background: #e0f2fe;
+  color: #0369a1;
+  border-left: 4px solid #0284c7;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+#unique {
+  background: #dcfce7;
+  color: #166534;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+a[title] {
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+a[title]:hover {
+  color: #0f172a;
+}
+
+.parent p {
+  background: #fef9c3;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.parent > .child {
+  background: #fde68a;
+  color: #92400e;
+}
+
+div + .next {
+  background: #e0e7ff;
+  color: #3730a3;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+div ~ .sibling {
+  background: #ddd6fe;
+  color: #6d28d9;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}

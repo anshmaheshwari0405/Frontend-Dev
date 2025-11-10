@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors Practice Page</title>
+  <link rel="stylesheet" href="css-selectors-practice.css">
+</head>
+
+<body>
+  <header>
+    <h1>CSS Selectors Practice</h1>
+    <p class="intro">This page demonstrates different types of CSS selectors including element, class, ID, attribute,
+      and combinators.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Element Selector Example</h2>
+      <p>This paragraph is styled using an <b>element selector</b>.</p>
+      <p>All paragraph tags share this same styling.</p>
+    </section>
+
+    <section>
+      <h2>Class Selector Example</h2>
+      <p class="highlight">This text is styled using a <b>class selector (.highlight)</b>.</p>
+      <p class="highlight">Multiple elements can share the same class.</p>
+    </section>
+
+    <section>
+      <h2>ID Selector Example</h2>
+      <p id="unique">This text is styled using an <b>ID selector (#unique)</b>.</p>
+    </section>
+
+    <section>
+      <h2>Attribute Selector Example</h2>
+      <a href="#" title="home">Home Link</a>
+      <a href="#" title="about">About Link</a>
+      <a href="#" title="contact">Contact Link</a>
+      <p>Hover over the links above — styled using <b>attribute selectors</b>.</p>
+    </section>
+
+    <section>
+      <h2>Combinator Selectors Example</h2>
+      <div class="parent">
+        <p>Child paragraph inside a div (selected using <b>descendant selector</b>).</p>
+        <p class="child">Direct child paragraph (selected using <b>child selector &gt;</b>).</p>
+      </div>
+
+      <p class="next">This paragraph comes right after a div (selected using <b>adjacent sibling +</b>).</p>
+      <p class="sibling">This paragraph follows later (selected using <b>general sibling ~</b>).</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Ishendra Rai © 2025</p>
+  </footer>
+</body>
+
+</html>
