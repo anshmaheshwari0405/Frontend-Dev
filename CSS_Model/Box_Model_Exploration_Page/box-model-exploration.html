@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Exploration</title>
+  <link rel="stylesheet" href="box-model-exploration.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>CSS Box Model Exploration</h1>
+    <p class="subtitle">A visual breakdown of content, padding, border, and margin</p>
+  </header>
+
+  <main class="container">
+    <section class="box-section">
+      <h2>Default Box Model (content-box)</h2>
+      <div class="box default-box">
+        <div class="layer content">Content</div>
+        <div class="layer padding">Padding</div>
+        <div class="layer border">Border</div>
+        <div class="layer margin">Margin</div>
+      </div>
+      <p class="description">
+        The default model uses <strong>box-sizing: content-box</strong>.  
+        Here, the defined width applies only to the content.  
+        Padding, border, and margin are added outside it.
+      </p>
+    </section>
+
+    <section class="box-section">
+      <h2>Box-Sizing: Border-Box</h2>
+      <div class="box border-box">
+        <div class="layer content">Content</div>
+        <div class="layer padding">Padding</div>
+        <div class="layer border">Border</div>
+        <div class="layer margin">Margin</div>
+      </div>
+      <p class="description">
+        With <strong>box-sizing: border-box</strong>,  
+        padding and border are included within the total width and height.  
+        It simplifies layout calculations for consistent sizing.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>📦 Designed to visualize how every box in CSS works — made with ❤️ by Ishendra Rai.</p>
+  </footer>
+</body>
+</html>

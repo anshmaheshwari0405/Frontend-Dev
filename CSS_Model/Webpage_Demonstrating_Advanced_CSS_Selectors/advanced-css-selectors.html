@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced CSS Selectors Demonstration</title>
+  <link rel="stylesheet" href="advanced-css-selectors.css" />
+</head>
+
+<body>
+  <header>
+    <h1>🎨 Advanced CSS Selectors Showcase</h1>
+    <p class="intro">Explore how attribute selectors, pseudo-classes, pseudo-elements, and combinators bring web styling
+      to life!</p>
+  </header>
+
+  <section class="form-section">
+    <h2>🧩 Attribute Selectors</h2>
+    <form>
+      <input type="text" placeholder="Enter your name..." />
+      <input type="password" placeholder="Enter your password..." />
+      <input type="email" placeholder="Enter your email..." />
+    </form>
+
+    <p class="links-title">Useful Links:</p>
+    <ul class="links">
+      <li><a href="https://www.google.com">Google (https)</a></li>
+      <li><a href="http://example.com">Example (http)</a></li>
+      <li><a href="https://www.wikipedia.org">Wikipedia (https)</a></li>
+    </ul>
+  </section>
+
+  <section class="list-section">
+    <h2>✨ Pseudo-classes & Pseudo-elements</h2>
+    <ul class="items">
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+      <li>Fourth Item</li>
+      <li>Fifth Item</li>
+    </ul>
+  </section>
+
+  <section class="combinator-section">
+    <h2>🔗 Combinators</h2>
+    <div class="parent">
+      <p>Direct child paragraph (>)</p>
+      <div>
+        <p>Nested paragraph (descendant)</p>
+      </div>
+      <p class="next">Adjacent sibling (+) below this line:</p>
+      <span>Next element styled using + combinator</span>
+      <p class="sibling">This paragraph will affect following siblings (~)</p>
+      <div>Div styled by ~ combinator</div>
+      <div>Another div styled by ~ combinator</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Advanced CSS Selectors Demo | Designed by Ishendra Rai</p>
+  </footer>
+</body>
+
+</html>

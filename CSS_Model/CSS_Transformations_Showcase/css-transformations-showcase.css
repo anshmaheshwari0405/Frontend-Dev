@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.title {
+  font-size: 2.2rem;
+  color: #333;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 60px auto;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.box {
+  width: 140px;
+  height: 140px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: all 0.4s ease;
+}
+
+.rotate-box {
+  background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+}
+.rotate-box:hover {
+  transform: rotate(45deg);
+  box-shadow: 0 12px 25px rgba(255, 107, 107, 0.4);
+}
+
+.scale-box {
+  background: linear-gradient(135deg, #4CAF50, #8BC34A);
+}
+.scale-box:hover {
+  transform: scale(1.3);
+  box-shadow: 0 15px 30px rgba(76, 175, 80, 0.4);
+}
+
+.translate-box {
+  background: linear-gradient(135deg, #2196F3, #21CBF3);
+}
+.translate-box:hover {
+  transform: translateY(-25px);
+  box-shadow: 0 18px 28px rgba(33, 150, 243, 0.4);
+}
+
+.skew-box {
+  background: linear-gradient(135deg, #FF9800, #FFC107);
+}
+.skew-box:hover {
+  transform: skew(20deg, 10deg);
+  box-shadow: 0 14px 25px rgba(255, 152, 0, 0.4);
+}
+
+.label {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #444;
+  font-size: 1.1rem;
+}
+
+footer {
+  background: #222;
+  color: #eee;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 0.9rem;
+  margin-top: auto;
+}

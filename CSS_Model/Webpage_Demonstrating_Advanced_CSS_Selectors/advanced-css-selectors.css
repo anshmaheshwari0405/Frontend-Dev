@@ -1,0 +1,158 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+header {
+  text-align: center;
+  background: #42a5f5;
+  color: white;
+  padding: 40px 20px;
+  border-bottom: 5px solid #1e88e5;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+}
+
+.intro {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+section {
+  background: white;
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  color: #1e88e5;
+  border-left: 5px solid #42a5f5;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  display: block;
+  margin: 10px auto;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  border-color: #42a5f5;
+  box-shadow: 0 0 6px rgba(66, 165, 245, 0.5);
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.links li {
+  margin: 8px 0;
+}
+
+a[href^="https"] {
+  color: #42a5f5;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a[href^="https"]:hover {
+  color: #1e88e5;
+  text-decoration: underline;
+}
+
+.items {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.items li {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.items li:nth-child(odd) {
+  background-color: #e3f2fd;
+}
+
+.items li:nth-child(even) {
+  background-color: #fce4ec;
+}
+
+.items li::before {
+  content: "👉 ";
+  color: #555;
+}
+
+.list-section::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 3px;
+  background: linear-gradient(to right, #42a5f5, #f06292);
+  margin: 30px auto 0;
+  border-radius: 3px;
+}
+
+.parent > p {
+  color: #4caf50;
+  font-weight: 600;
+}
+
+.parent div p {
+  color: #1e88e5;
+}
+
+.next + span {
+  color: #e91e63;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.sibling ~ div {
+  background-color: #c8e6c9;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+footer {
+  background-color: #1e88e5;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.95rem;
+  margin-top: 40px;
+}

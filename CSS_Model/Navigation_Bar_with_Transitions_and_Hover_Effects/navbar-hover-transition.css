@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #f3e5f5);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #42a5f5;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #1e88e5;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #ef5350;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  left: 50%;
+  bottom: 0;
+  background: #42a5f5;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+.nav-links a:hover::after {
+  width: 80%;
+}
+
+.nav-links a:hover {
+  color: #1e88e5;
+  transform: translateY(-3px);
+}
+
+.nav-links a.active {
+  color: white;
+  background: #42a5f5;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(66, 165, 245, 0.3);
+}
+
+.nav-links a.active::after {
+  width: 80%;
+  background: white;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    padding-top: 10px;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.content {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.content h1 {
+  font-size: 2.3rem;
+  margin-bottom: 15px;
+  color: #1e88e5;
+}
+
+.content p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #1e88e5;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+
+footer .author {
+  font-weight: 600;
+  color: #ffd54f;
+}

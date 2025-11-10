@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+header, footer {
+  background-color: #222;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+}
+
+header {
+  top: 0;
+}
+
+footer {
+  bottom: 0;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+}
+
+.linear-section {
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  background-attachment: fixed;
+}
+
+
+.radial-section {
+  background: radial-gradient(circle, #2196f3, #20daaf);
+}
+
+h1, h2, p {
+  margin-bottom: 15px;
+}

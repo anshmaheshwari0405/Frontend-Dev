@@ -1,0 +1,105 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #c9eaff, #f8d9ff);
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #222;
+}
+
+header p {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.box {
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.box1 {
+  width: 200px;
+  height: 150px;
+  background: linear-gradient(135deg, #4caf50, #81c784);
+}
+
+.box2 {
+  width: 50%;
+  height: 30vh;
+  background: linear-gradient(135deg, #2196f3, #64b5f6);
+}
+
+.box3 {
+  width: 15em;
+  min-height: 100px;
+  max-width: 300px;
+  background: linear-gradient(135deg, #ff9800, #ffb74d);
+  overflow: auto;
+}
+
+.box h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.box p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.overflow-text {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  padding: 8px;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  overflow-y: auto;
+  max-height: 80px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-size: 0.9rem;
+  color: #444;
+}
