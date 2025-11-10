@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combined Responsive Web Demo</title>
+  <link rel="stylesheet" href="combined-responsive-web-demo.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">Responsive<span>Demo</span></div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Gallery</a>
+      <a href="#">Cheat Sheet</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="gallery section fade-in">
+      <h2>Responsive Image Gallery</h2>
+      <div class="gallery-grid">
+        <img src="https://picsum.photos/id/1021/400/300" alt="Gallery Image 1">
+        <img src="https://picsum.photos/id/1025/400/300" alt="Gallery Image 2">
+        <img src="https://picsum.photos/id/1031/400/300" alt="Gallery Image 3">
+      </div>
+    </section>
+
+    <section class="text section fade-in">
+      <h2>About Responsive Design</h2>
+      <p>
+        Responsive web design allows a website to adapt its layout to any screen size — desktop, tablet, or mobile.
+        It uses flexible grids, CSS media queries, and relative units to ensure every user enjoys a seamless experience.
+      </p>
+    </section>
+
+    <section class="cheatsheet section fade-in">
+      <h2>Responsive CSS Cheat Sheet</h2>
+      <div class="grid">
+        <div class="box">
+          <h3>Media Queries</h3>
+          <p>@media (max-width: 600px) { ... }</p>
+        </div>
+        <div class="box">
+          <h3>CSS Grid</h3>
+          <p>grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</p>
+        </div>
+        <div class="box">
+          <h3>Typography</h3>
+          <p>font-size: clamp(1rem, 2vw, 2rem);</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Responsive Web Demo | Designed by <strong>Ishendra Rai</strong></p>
+  </footer>
+</body>
+
+</html>

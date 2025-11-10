@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f6f9fc;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.principles {
+  text-align: center;
+  padding: 2rem 1rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.principles h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #1e3c72;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.box {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  text-align: left;
+}
+
+.box h2 {
+  color: #1e3c72;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.box p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+pre {
+  background: #f0f4fa;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #2a5298;
+  overflow-x: auto;
+}
+
+.box:hover {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  transform: translateY(-8px);
+}
+
+.box:hover h2,
+.box:hover p,
+.box:hover pre {
+  color: white;
+}
+
+.footer {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .box {
+    text-align: center;
+  }
+
+  pre {
+    text-align: left;
+  }
+}

@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f7f7f7;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+figure {
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.5s ease;
+}
+
+figure:nth-child(1) img {
+  filter: blur(3px);
+}
+figure:nth-child(2) img {
+  filter: grayscale(100%);
+}
+figure:nth-child(3) img {
+  filter: sepia(100%);
+}
+figure:nth-child(4) img {
+  filter: brightness(0.6);
+}
+figure:nth-child(5) img {
+  filter: contrast(180%);
+}
+figure:nth-child(6) img {
+  filter: hue-rotate(120deg);
+}
+
+img:hover {
+  filter: none;
+}
+
+figcaption {
+  padding: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}

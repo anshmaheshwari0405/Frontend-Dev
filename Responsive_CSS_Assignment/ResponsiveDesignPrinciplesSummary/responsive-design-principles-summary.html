@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design Principles Summary</title>
+  <link rel="stylesheet" href="responsive-design-principles-summary.css">
+</head>
+
+<body>
+  <section class="principles">
+    <h1>Responsive Design Principles</h1>
+
+    <div class="grid">
+      <div class="box">
+        <h2>Fluid Layouts</h2>
+        <p>Layouts that use relative units like percentages instead of fixed pixels, allowing content to adapt to any
+          screen size.</p>
+        <pre><code>width: 80%;</code></pre>
+      </div>
+
+      <div class="box">
+        <h2>Flexible Media</h2>
+        <p>Images and videos resize automatically within their containers using max-width and height auto properties.
+        </p>
+        <pre><code>img { max-width: 100%; height: auto; }</code></pre>
+      </div>
+
+      <div class="box">
+        <h2>Breakpoints</h2>
+        <p>Media queries define breakpoints to adjust the layout and design for different devices and screen sizes.</p>
+        <pre><code>@media (max-width: 600px) { ... }</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Responsive Design Summary | Designed by <strong>Ishendra Rai</strong></p>
+  </footer>
+</body>
+
+</html>
