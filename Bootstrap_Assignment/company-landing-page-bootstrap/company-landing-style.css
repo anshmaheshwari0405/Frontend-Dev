@@ -1,0 +1,18 @@
+.hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.primary-cta {
+  min-width: 160px;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: saturate(120%) blur(4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}

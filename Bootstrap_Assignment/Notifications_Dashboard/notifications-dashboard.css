@@ -1,0 +1,29 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background: linear-gradient(90deg, #4e57d4, #5e7eff);
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.summary-well {
+  transition: all 0.3s ease;
+}
+
+.summary-well:hover {
+  background-color: #f9f9ff;
+  box-shadow: 0 6px 18px rgba(78, 87, 212, 0.15);
+}
+
+.alert {
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #fff;
+}

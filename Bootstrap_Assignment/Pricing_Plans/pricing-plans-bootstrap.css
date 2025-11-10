@@ -1,0 +1,32 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.plan-card {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.plan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.pro-plan {
+  background: linear-gradient(90deg, #4e57d4, #5e7eff);
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+header {
+  background: linear-gradient(90deg, #4e57d4, #5e7eff);
+}
+
+footer {
+  background-color: #fff;
+}

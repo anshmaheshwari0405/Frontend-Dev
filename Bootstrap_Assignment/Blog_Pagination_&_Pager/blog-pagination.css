@@ -1,0 +1,32 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background: linear-gradient(90deg, #212529, #343a40);
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.pagination .page-link {
+  border-radius: 6px;
+}
+
+footer {
+  background-color: #fff;
+}

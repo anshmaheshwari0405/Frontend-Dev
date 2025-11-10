@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Catalog — Bootstrap Grid</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="product-catalog-style.css">
+</head>
+
+<body class="bg-light text-dark">
+
+  <header class="text-center py-5">
+    <h1 class="fw-bold text-white mb-3">Tech Store</h1>
+    <p class="text-light mb-0">Discover the latest gadgets at unbeatable prices</p>
+  </header>
+
+  <main class="container py-5">
+    <div class="row g-4">
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card product-card shadow-sm h-100">
+          <img src="https://images.meesho.com/images/products/388602283/94ceg_512.webp?width=512" class="card-img-top"
+            alt="Gaming Mouse">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Gaming Mouse</h5>
+            <p class="card-text text-success fw-semibold">₹490</p>
+            <button class="btn btn-primary w-100">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card product-card shadow-sm h-100">
+          <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Rockerz_551_ANC_Pro.347_1.jpg?v=1737546044" class="card-img-top"
+            alt="Headphones">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Wireless Headphones</h5>
+            <p class="card-text text-success fw-semibold">₹999</p>
+            <button class="btn btn-primary w-100">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card product-card shadow-sm h-100">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtrypqkM6xtfRVXc8ScnhmJa03jtrGHmZVlA&s" class="card-img-top"
+            alt="Smartwatch">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Smartwatch</h5>
+            <p class="card-text text-success fw-semibold">₹1290</p>
+            <button class="btn btn-primary w-100">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card product-card shadow-sm h-100">
+          <img src="https://m.media-amazon.com/images/I/417GshkqEQL._SR290,290_.jpg" class="card-img-top"
+            alt="Bluetooth Speaker">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Bluetooth Speaker</h5>
+            <p class="card-text text-success fw-semibold">₹790</p>
+            <button class="btn btn-primary w-100">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-4">
+    <small class="text-muted">© <span id="year"></span> Tech Store | All Rights Reserved | Designed by Ishendra Rai</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

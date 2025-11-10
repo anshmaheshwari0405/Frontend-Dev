@@ -1,0 +1,30 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background: linear-gradient(90deg, #4e57d4, #5e7eff);
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.list-group-item {
+  transition: all 0.2s ease;
+}
+
+.list-group-item:hover {
+  background-color: #f7f8ff;
+  transform: scale(1.01);
+}
+
+.btn-success {
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #fff;
+}

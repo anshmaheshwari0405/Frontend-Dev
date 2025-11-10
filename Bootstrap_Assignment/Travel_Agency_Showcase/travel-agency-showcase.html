@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Agency Showcase — Bootstrap Carousel</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="travel-agency-showcase.css">
+</head>
+
+<body>
+
+  <header class="bg-primary text-white text-center py-4 shadow-sm">
+    <h1 class="fw-bold mb-1">GlobeTrek Travel Agency</h1>
+    <p class="lead mb-0">Discover. Explore. Experience.</p>
+  </header>
+
+  <div id="travelCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80"
+          class="d-block w-100" alt="Bali Beach">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+          <h3>Bali, Indonesia</h3>
+          <p>Experience the serene beaches and vibrant island culture.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3500">
+        <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1400&q=80"
+          class="d-block w-100" alt="Switzerland Alps">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+          <h3>Swiss Alps, Switzerland</h3>
+          <p>Embark on a breathtaking mountain adventure.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-bs-interval="4000">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1400&q=80"
+          class="d-block w-100" alt="Paris">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+          <h3>Paris, France</h3>
+          <p>Fall in love with the City of Lights and its charm.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#travelCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#travelCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <section class="container text-center my-5">
+    <h4 class="fw-bold text-primary mb-3">Booking Completion Status</h4>
+    <div class="progress" style="height: 25px;">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 70%;">
+        70% Booked
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 bg-dark text-white">
+    <p class="mb-1">📍 987, Vivek Vihar, Delhi, India</p>
+    <p class="mb-1">📧 contact@gmail.com | ☎️ +91 98765 43210</p>
+    <small>© <span id="year"></span> GlobeTrek Travel Agency — Your Journey Begins Here | Designed by Ishendra Rai</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

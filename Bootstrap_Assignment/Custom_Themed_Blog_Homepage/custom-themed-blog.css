@@ -1,0 +1,41 @@
+:root {
+  --bs-primary: #4e57d4;
+  --bs-primary-rgb: 78, 87, 212;
+  --bs-font-sans-serif: "Inter", sans-serif;
+  --bs-body-color: #333;
+  --bs-body-bg: #f8f9fc;
+}
+
+body {
+  font-family: var(--bs-font-sans-serif);
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+header {
+  background: linear-gradient(90deg, var(--bs-primary), #7a86f9);
+}
+
+.card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(var(--bs-primary-rgb), 0.25);
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #3d47b5;
+}
+
+footer {
+  background-color: #fff;
+}

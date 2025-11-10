@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant Menu — Bootstrap Components</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="restaurant-menu-style.css">
+</head>
+
+<body class="bg-light text-dark">
+
+  <header class="text-center py-5 bg-danger text-white">
+    <h1 class="fw-bold mb-3">The Spice Garden</h1>
+    <p class="lead mb-0">Taste the Authentic Flavors of India</p>
+  </header>
+
+  <main class="container py-5">
+
+    <div class="text-center mb-5">
+      <img src="https://vj-prod-website-cms.s3.ap-southeast-1.amazonaws.com/a1-1715746248791.jpg" alt="Delicious Indian Dish"
+        class="img-fluid rounded shadow-sm mb-3">
+      <p class="text-muted fst-italic">Freshly prepared with love by our chefs</p>
+    </div>
+
+    <section class="mb-5">
+      <h2 class="text-center fw-bold mb-4 text-danger">Today's Menu</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped align-middle text-center">
+          <thead class="table-danger">
+            <tr>
+              <th scope="col">Category</th>
+              <th scope="col">Dish</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Starters</td>
+              <td>Paneer Tikka</td>
+              <td>₹180</td>
+            </tr>
+            <tr>
+              <td>Main Course</td>
+              <td>Butter Chicken</td>
+              <td>₹320</td>
+            </tr>
+            <tr>
+              <td>Main Course</td>
+              <td>Dal Makhani</td>
+              <td>₹240</td>
+            </tr>
+            <tr>
+              <td>Breads</td>
+              <td>Garlic Naan</td>
+              <td>₹60</td>
+            </tr>
+            <tr>
+              <td>Desserts</td>
+              <td>Gulab Jamun</td>
+              <td>₹120</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-center fw-bold mb-4 text-danger">Chef's Specials</h2>
+      <ul class="list-group list-group-flush w-75 mx-auto shadow-sm">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Chicken Biryani <span class="badge bg-danger rounded-pill">₹350</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Mutton Rogan Josh <span class="badge bg-danger rounded-pill">₹420</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Veg Kebab Platter <span class="badge bg-danger rounded-pill">₹280</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="text-center py-4 mt-5">
+    <small class="text-muted">© <span id="year"></span> The Spice Garden | All Rights Reserved | by Ishendra Rai</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

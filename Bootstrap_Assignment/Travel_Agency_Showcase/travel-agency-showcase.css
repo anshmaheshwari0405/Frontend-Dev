@@ -1,0 +1,26 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+header {
+  background: linear-gradient(90deg, #007bff, #00bcd4);
+}
+
+.carousel img {
+  height: 600px;
+  object-fit: cover;
+}
+
+.carousel-caption h3 {
+  font-weight: 700;
+}
+
+.progress {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+footer {
+  background: linear-gradient(90deg, #212529, #343a40);
+}
