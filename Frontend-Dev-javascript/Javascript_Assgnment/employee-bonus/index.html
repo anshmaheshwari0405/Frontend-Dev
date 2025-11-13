@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💰 Employee Bonus Distribution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🏢 Employee Bonus Calculator</h1>
+
+        <div class="input-box">
+            <label>Base Salary (₹):</label>
+            <input type="number" id="baseSalary" placeholder="Enter base salary">
+        </div>
+
+        <div class="input-box">
+            <label>Performance Rating (1–5):</label>
+            <input type="number" id="rating" min="1" max="5" placeholder="Enter rating">
+        </div>
+
+        <div class="input-box">
+            <label>Experience (in years):</label>
+            <input type="number" id="experience" placeholder="Enter experience">
+        </div>
+
+        <button onclick="calculateBonus()">Calculate Bonus</button>
+
+        <div id="result" class="result-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

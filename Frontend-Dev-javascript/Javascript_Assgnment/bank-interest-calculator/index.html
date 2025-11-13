@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏦 Banking Interest Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🏦 Banking Interest Calculator</h1>
+
+        <div class="input-box">
+            <label>Account Type:</label>
+            <select id="accountType">
+                <option value="savings">Savings Account</option>
+                <option value="fixed">Fixed Deposit</option>
+            </select>
+        </div>
+
+        <div class="input-box">
+            <label>Deposit Amount (₹):</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+        </div>
+
+        <div class="input-box">
+            <label>Number of Years:</label>
+            <input type="number" id="years" placeholder="Enter years">
+        </div>
+
+        <button onclick="calculateInterest()">Calculate</button>
+
+        <div id="result" class="result-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
