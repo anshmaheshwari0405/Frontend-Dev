@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌦️ Weather Alert System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🌤️ Weather Alert System</h1>
+
+        <div class="input-box">
+            <label>Temperature (°C):</label>
+            <input type="number" id="temperature" placeholder="Enter temperature">
+        </div>
+
+        <div class="input-box">
+            <label>Humidity (%):</label>
+            <input type="number" id="humidity" placeholder="Enter humidity">
+        </div>
+
+        <div class="input-box">
+            <label>Wind Speed (km/h):</label>
+            <input type="number" id="windSpeed" placeholder="Enter wind speed">
+        </div>
+
+        <button onclick="checkWeather()">Check Safety</button>
+
+        <div id="result" class="result-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

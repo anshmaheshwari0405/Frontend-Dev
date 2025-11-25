@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Form</title>
+</head>
+
+<body>
+
+  <h2>User Information</h2>
+  <label for="name">Name:</label><input type="text" id="name"><br><br>
+  <label for="email">Email:</label><input type="email" id="email"><br><br>
+  <label for="age">Age:</label><input type="number" id="age"><br><br>
+
+  <button onclick="updateUser()">Update User</button>
+
+  <h3>Updated User Info:</h3>
+  <div id="output"></div>
+
+  <script>
+
+    const user = { name: "Ishendra Rai", email: "ishurai.020805@gmail.com", age: 20 };
+
+    function loadUserData() {
+      document.getElementById("name").value = user.name;
+      document.getElementById("email").value = user.email;
+      document.getElementById("age").value = user.age;
+    }
+
+    function updateUser() {
+      user.name = document.getElementById("name").value;
+      user.email = document.getElementById("email").value;
+      user.age = document.getElementById("age").value;
+
+      displayUser();
+    }
+
+    function displayUser() {
+      const output = document.getElementById("output");
+      output.innerHTML = `Name: ${user.name}<br>Email: ${user.email}<br>Age: ${user.age}`;
+    }
+
+    loadUserData();
+
+  </script>
+</body>
+
+</html>

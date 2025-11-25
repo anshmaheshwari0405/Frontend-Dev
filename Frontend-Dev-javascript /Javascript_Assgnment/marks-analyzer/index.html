@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚 Marks Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>📊 Marks Analyzer</h1>
+
+        <p>Enter marks (out of 100) for five subjects:</p>
+
+        <div class="input-box">
+            <input type="number" id="m1" placeholder="Subject 1">
+            <input type="number" id="m2" placeholder="Subject 2">
+            <input type="number" id="m3" placeholder="Subject 3">
+            <input type="number" id="m4" placeholder="Subject 4">
+            <input type="number" id="m5" placeholder="Subject 5">
+        </div>
+
+        <button onclick="analyzeMarks()">Analyze</button>
+
+        <div id="result" class="result-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

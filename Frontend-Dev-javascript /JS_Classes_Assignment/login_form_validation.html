@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Validation</title>
+</head>
+
+<body>
+
+  <form onsubmit="validateLogin(); return false;">
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter username"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter password"><br><br>
+
+    <button type="submit">Login</button>
+  </form>
+
+  <div id="message"></div>
+
+  <script>
+    function validateLogin() {
+      const username = document.getElementById("username");
+      const password = document.getElementById("password");
+      const message = document.getElementById("message");
+
+      const userPattern = /^.{5,}$/;
+      const passPattern = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}$/;
+
+      let valid = true;
+      let errors = [];
+
+      if (!userPattern.test(username.value)) {
+        valid = false;
+        errors.push("Username must be at least 5 characters");
+        username.style.border = "2px solid red";
+      } else {
+        username.style.border = "2px solid green";
+      }
+
+      if (!passPattern.test(password.value)) {
+        valid = false;
+        errors.push(
+          "Password must be 8+ chars, include upper, lower, number, special char"
+        );
+        password.style.border = "2px solid red";
+      } else {
+        password.style.border = "2px solid green";
+      }
+
+      if (valid) {
+        message.style.color = "green";
+        message.textContent = "Login Successful";
+      } else {
+        message.style.color = "red";
+        message.textContent = errors.join(" | ");
+      }
+    }
+  </script>
+
+</body>
+
+</html>

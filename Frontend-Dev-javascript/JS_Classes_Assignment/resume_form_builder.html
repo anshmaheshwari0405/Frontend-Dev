@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Resume</title>
+</head>
+
+<body>
+
+    <h2>Create Your Resume</h2>
+    <form onsubmit="buildResume(); return false;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required><br><br>
+
+        <label for="skills">Skills:</label>
+        <textarea id="skills" placeholder="Enter your skills"></textarea><br><br>
+
+        <label for="github">GitHub Profile URL:</label>
+        <input type="url" id="github" placeholder="Enter your GitHub URL" required><br><br>
+
+        <label for="linkedin">LinkedIn Profile URL:</label>
+        <input type="url" id="linkedin" placeholder="Enter your LinkedIn URL" required><br><br>
+
+        <button type="submit">Build Resume</button>
+    </form>
+
+    <h3>Resume Output:</h3>
+    <pre id="output"></pre>
+
+    <script>
+        function buildResume() {
+            const nameField = document.getElementById("name");
+            const emailField = document.getElementById("email");
+            const skillsField = document.getElementById("skills");
+            const githubField = document.getElementById("github");
+            const linkedInField = document.getElementById("linkedin");
+            const output = document.getElementById("output");
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const urlPattern = /^https:\/\//;
+
+            let valid = true;
+
+            if (!emailPattern.test(emailField.value)) {
+                emailField.style.border = "2px solid red";
+                valid = false;
+            } else {
+                emailField.style.border = "2px solid green";
+            }
+
+            if (!urlPattern.test(githubField.value)) {
+                githubField.style.border = "2px solid red";
+                valid = false;
+            } else {
+                githubField.style.border = "2px solid green";
+            }
+
+            if (!urlPattern.test(linkedInField.value)) {
+                linkedInField.style.border = "2px solid red";
+                valid = false;
+            } else {
+                linkedInField.style.border = "2px solid green";
+            }
+
+            if (!valid) return;
+
+            const resume = {
+                name: nameField.value,
+                email: emailField.value,
+                skills: skillsField.value,
+                github: githubField.value,
+                linkedin: linkedInField.value
+            };
+
+            output.textContent = JSON.stringify(resume, null, 2);
+        }
+
+    </script>
+</body>
+
+</html>

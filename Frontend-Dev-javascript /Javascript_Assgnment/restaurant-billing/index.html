@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍽️ Restaurant Billing with Tips</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🍴 Restaurant Billing System</h1>
+
+        <div class="input-box">
+            <label>Base Food Cost (₹):</label>
+            <input type="number" id="baseCost" placeholder="Enter base cost">
+        </div>
+
+        <div class="input-box">
+            <label>Dining Type:</label>
+            <select id="diningType">
+                <option value="takeaway">Takeaway</option>
+                <option value="dinein">Dine-In</option>
+            </select>
+        </div>
+
+        <button onclick="calculateBill()">Calculate Bill</button>
+
+        <div id="result" class="result-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Multi jQuery</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>var jq1 = $.noConflict(true);</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>var jq2 = $.noConflict(true);</script>
+    <script src="Q9.js"></script>
+</head>
+
+<body>
+    <main>
+        <div id="carousel">Slide1|Slide2|Slide3|Slide4|Slide5</div>
+        <div id="modalTrigger" tabindex="0">Open Modal</div>
+        <section id="widgets">
+            <div class="widget">W1</div>
+            <div class="widget">W2</div>
+            <div class="widget">W3</div>
+            <div class="widget">W4</div>
+            <div class="widget">W5</div>
+        </section>
+    </main>
+</body>
+
+</html>

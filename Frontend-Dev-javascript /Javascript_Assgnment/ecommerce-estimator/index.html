@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Delivery Estimator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🛒 E-Commerce Delivery Estimator</h1>
+
+        <div class="input-box">
+            <label>Order Amount (₹):</label>
+            <input type="number" id="orderAmount" placeholder="Enter amount">
+        </div>
+
+        <div class="input-box">
+            <label>Premium Member:</label>
+            <select id="isPremium">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select>
+        </div>
+
+        <div class="input-box">
+            <label>Address Type:</label>
+            <select id="isRemote">
+                <option value="false">Normal</option>
+                <option value="true">Remote</option>
+            </select>
+        </div>
+
+        <button onclick="calculateEstimate()">Get Estimate</button>
+
+        <div id="result" class="result-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

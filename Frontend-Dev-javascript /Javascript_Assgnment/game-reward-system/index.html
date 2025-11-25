@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 Game Reward System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🏆 Game Reward System</h1>
+
+        <div class="input-box">
+            <label>Player Level:</label>
+            <input type="number" id="level" placeholder="Enter level">
+        </div>
+
+        <div class="input-box">
+            <label>Performance Score:</label>
+            <input type="number" id="performance" placeholder="Enter performance score">
+        </div>
+
+        <div class="input-box">
+            <label>Completed All Missions?</label>
+            <select id="missionsCompleted">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select>
+        </div>
+
+        <button onclick="calculateReward()">Get Reward</button>
+
+        <div id="result" class="result-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

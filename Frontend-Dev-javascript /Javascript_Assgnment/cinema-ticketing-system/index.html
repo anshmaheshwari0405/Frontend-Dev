@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 Cinema Ticketing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎟️ Cinema Ticketing System</h1>
+
+        <div class="input-box">
+            <label>Show Time:</label>
+            <select id="showTime">
+                <option value="morning">Morning Show (₹120)</option>
+                <option value="evening">Evening Show (₹180)</option>
+            </select>
+        </div>
+
+        <div class="input-box">
+            <label>Number of Tickets:</label>
+            <input type="number" id="numTickets" placeholder="Enter number of tickets">
+        </div>
+
+        <div class="input-box">
+            <label>Customer Type:</label>
+            <select id="customerType">
+                <option value="regular">Regular</option>
+                <option value="student">Student (10% off)</option>
+                <option value="senior">Senior (20% off)</option>
+            </select>
+        </div>
+
+        <button onclick="calculateTotal()">Calculate Total</button>
+
+        <div id="result" class="result-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
