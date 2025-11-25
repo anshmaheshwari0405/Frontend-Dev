@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Mouse Path & Coordinates</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #eef1f7;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #box {
+            width: 420px;
+            height: 420px;
+            background: #fff;
+            border-radius: 12px;
+            border: 2px solid #4a6cf7;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            position: relative;
+            user-select: none;
+            transition: 0.2s ease;
+        }
+
+        #box:hover {
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+        }
+
+        .dot {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #ff2c2c;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+
+        #coords {
+            margin-top: 18px;
+            padding: 10px 14px;
+            border-radius: 6px;
+            background: #fff;
+            border: 1px solid #ccc;
+            width: 420px;
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Mouse Path & Coordinates Logger</h1>
+    <div id="box"></div>
+    <div id="coords">clientX: -, clientY: -</div>
+
+    <script src="Q7.js"></script>
+
+</body>
+
+</html>

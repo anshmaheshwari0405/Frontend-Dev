@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Live Character Counter</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #eef1f7;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .container {
+            background: #fff;
+            padding: 25px 30px;
+            width: 420px;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        textarea {
+            width: 100%;
+            border: 1px solid #bbb;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 15px;
+            outline: none;
+            resize: none;
+            transition: 0.25s;
+        }
+
+        textarea:focus {
+            border-color: #4a6cf7;
+            box-shadow: 0 0 6px rgba(74, 108, 247, 0.35);
+        }
+
+        #counter {
+            margin-top: 12px;
+            font-size: 15px;
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 8px;
+            background: #f0f0f0;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .yellow {
+            background: #ffe88a !important;
+        }
+
+        .red {
+            background: #ffb3b3 !important;
+            color: #b00000 !important;
+        }
+
+        #reset-btn {
+            margin-top: 15px;
+            width: 100%;
+            padding: 12px;
+            background: #4a6cf7;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.25s;
+        }
+
+        #reset-btn:hover {
+            background: #3856d0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Live Character Counter</h1>
+
+    <div class="container">
+        <textarea id="text-area" rows="5" placeholder="Type up to 100 characters..."></textarea>
+        <div id="counter">100 characters remaining</div>
+        <button id="reset-btn">Reset</button>
+    </div>
+
+    <script src="Q2.js"></script>
+
+</body>
+
+</html>

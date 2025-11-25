@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Multi-Step Form</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #eef1f7;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .form-card {
+            width: 380px;
+            background: #fff;
+            padding: 30px 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        .step {
+            display: none;
+            animation: fadeIn 0.25s ease;
+        }
+
+        .step.active {
+            display: block;
+        }
+
+        label {
+            font-size: 15px;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+            font-size: 14px;
+            outline: none;
+            transition: 0.2s;
+        }
+
+        input:focus {
+            border-color: #4a6cf7;
+            box-shadow: 0 0 6px rgba(74, 108, 247, 0.35);
+        }
+
+        .error {
+            color: #d10000;
+            font-size: 0.86em;
+            margin-top: 4px;
+        }
+
+        button {
+            padding: 10px 16px;
+            border-radius: 6px;
+            border: none;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 14px;
+            transition: 0.25s;
+        }
+
+        .btn-next {
+            background: #4a6cf7;
+            color: white;
+        }
+
+        .btn-next:hover {
+            background: #3655d0;
+        }
+
+        .btn-back {
+            background: #ccc;
+            margin-right: 8px;
+        }
+
+        .btn-back:hover {
+            background: #b3b3b3;
+        }
+
+        #summary {
+            width: 380px;
+            margin-top: 20px;
+            background: #fff;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        #summary h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .progress {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            gap: 14px;
+        }
+
+        .circle {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #bbb;
+        }
+
+        .circle.active {
+            background: #4a6cf7;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Multi-Step Form</h1>
+
+    <div class="progress">
+        <div class="circle" id="p1"></div>
+        <div class="circle" id="p2"></div>
+        <div class="circle" id="p3"></div>
+    </div>
+
+    <div class="form-card">
+
+        <div id="step-1" class="step active">
+            <label>Name</label>
+            <input id="name-input" />
+            <div id="name-error" class="error"></div>
+            <button id="to-step-2" class="btn-next">Next</button>
+        </div>
+
+        <div id="step-2" class="step">
+            <label>Email</label>
+            <input id="email-input" />
+            <div id="email-error" class="error"></div>
+            <button id="back-to-1" class="btn-back">Back</button>
+            <button id="to-step-3" class="btn-next">Next</button>
+        </div>
+
+        <div id="step-3" class="step">
+            <label>Password</label>
+            <input id="password-input" type="password" />
+            <div id="password-error" class="error"></div>
+            <button id="back-to-2" class="btn-back">Back</button>
+            <button id="finish" class="btn-next">Finish</button>
+        </div>
+
+    </div>
+
+    <div id="summary" style="display:none;">
+        <h2>Summary</h2>
+        <div id="summary-content"></div>
+    </div>
+
+    <script src="Q3.js"></script>
+
+</body>
+
+</html>

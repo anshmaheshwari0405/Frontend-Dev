@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Theme Switcher</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            padding: 50px;
+            transition: background 0.3s ease, color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        body[data-theme="light"] {
+            background: #ffffff;
+            color: #222;
+        }
+
+        body[data-theme="dark"] {
+            background: #0e0e0e;
+            color: #f0f0f0;
+        }
+
+        body[data-theme="blue"] {
+            background: #e9f1ff;
+            color: #123b7a;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .theme-box {
+            background: #fff;
+            padding: 25px 30px;
+            border-radius: 12px;
+            display: flex;
+            gap: 15px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        button {
+            padding: 10px 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            transition: 0.25s;
+        }
+
+        button[data-theme="light"] {
+            background: #f3f3f3;
+            color: #222;
+        }
+
+        button[data-theme="dark"] {
+            background: #222;
+            color: #fff;
+        }
+
+        button[data-theme="blue"] {
+            background: #3f6be0;
+            color: #fff;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+</head>
+
+<body data-theme="light">
+
+    <h1>Theme Switcher</h1>
+
+    <div class="theme-box">
+        <button data-theme="light">Light</button>
+        <button data-theme="dark">Dark</button>
+        <button data-theme="blue">Blue</button>
+    </div>
+
+    <script src="Q4.js"></script>
+
+</body>
+
+</html>

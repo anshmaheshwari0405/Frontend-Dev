@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Product List Manager</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #eef1f7;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .container {
+            background: #fff;
+            padding: 25px 30px;
+            width: 450px;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        #product-input {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #bbb;
+            border-radius: 8px;
+            font-size: 15px;
+            outline: none;
+            transition: 0.25s ease;
+        }
+
+        #product-input:focus {
+            border-color: #4a6cf7;
+            box-shadow: 0 0 6px rgba(74, 108, 247, 0.3);
+        }
+
+        #add-product {
+            padding: 10px 16px;
+            background: #4a6cf7;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: 0.25s ease;
+        }
+
+        #add-product:hover {
+            background: #3656d0;
+        }
+
+        #product-list {
+            list-style: none;
+            margin-top: 20px;
+            padding: 0;
+        }
+
+        #product-list li {
+            background: #f7f8fc;
+            padding: 12px 14px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: 0.25s ease;
+        }
+
+        #product-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+        }
+
+        .controls button {
+            padding: 6px 12px;
+            font-size: 13px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            margin-left: 6px;
+            transition: 0.2s ease;
+        }
+
+        .controls button:first-child {
+            background: #4caf50;
+            color: white;
+        }
+
+        .controls button:first-child:hover {
+            background: #3e8e41;
+        }
+
+        .controls button:last-child {
+            background: #ff4b4b;
+            color: white;
+        }
+
+        .controls button:last-child:hover {
+            background: #e13b3b;
+        }
+
+        .edit-input {
+            width: 65%;
+            padding: 8px 10px;
+            border-radius: 6px;
+            border: 1px solid #aaa;
+            font-size: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Product List Manager</h1>
+
+    <div class="container">
+        <input id="product-input" placeholder="Enter product name..." />
+        <button id="add-product">Add</button>
+
+        <ul id="product-list"></ul>
+    </div>
+
+    <script src="Q1.js"></script>
+
+</body>
+
+</html>

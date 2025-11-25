@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Table Filter</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #eef1f7;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #search-box {
+            width: 350px;
+            padding: 12px 14px;
+            border-radius: 8px;
+            border: 1px solid #bbb;
+            font-size: 15px;
+            margin-bottom: 18px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+            outline: none;
+            transition: 0.2s;
+        }
+
+        #search-box:focus {
+            border-color: #4a6cf7;
+            box-shadow: 0 4px 12px rgba(74, 108, 247, 0.35);
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 700px;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+        }
+
+        thead {
+            background: #4a6cf7;
+            color: #fff;
+        }
+
+        th,
+        td {
+            padding: 14px;
+            text-align: left;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        tr:hover {
+            background: #f5f7ff;
+        }
+
+        #no-results {
+            display: none;
+            margin-top: 15px;
+            color: #d10000;
+            font-weight: bold;
+            background: #ffe3e3;
+            padding: 10px 16px;
+            border-radius: 6px;
+            border: 1px solid #ffb7b7;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Student Table Filter</h1>
+
+    <input id="search-box" placeholder="Search by name, branch, cgpa..." />
+
+    <div id="no-results">No results found</div>
+
+    <table id="students-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>CGPA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ishendra</td>
+                <td>CSE</td>
+                <td>7.79</td>
+            </tr>
+            <tr>
+                <td>Aryan</td>
+                <td>ECE</td>
+                <td>8.3</td>
+            </tr>
+            <tr>
+                <td>Chetan</td>
+                <td>ME</td>
+                <td>7.5</td>
+            </tr>
+            <tr>
+                <td>Himanshu</td>
+                <td>CSE</td>
+                <td>8.9</td>
+            </tr>
+            <tr>
+                <td>Dipanshu</td>
+                <td>CE</td>
+                <td>7.8</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="Q6.js"></script>
+
+</body>
+
+</html>

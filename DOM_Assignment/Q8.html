@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Custom Dropdown</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background: linear-gradient(to right, #22c1c3, #fdbb2d);
+        }
+
+        h1 {
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .toggle-btn {
+            padding: 10px 14px;
+            cursor: pointer;
+            border: 1px solid #777;
+            background: #fff;
+            border-radius: 6px;
+            min-width: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            transition: 0.2s;
+        }
+
+        .toggle-btn:hover {
+            background: #fafafa;
+        }
+
+        .arrow {
+            font-size: 13px;
+            transition: transform 0.2s;
+        }
+
+        .arrow.rotate {
+            transform: rotate(180deg);
+        }
+
+        .options {
+            position: absolute;
+            top: 110%;
+            left: 0;
+            border: 1px solid #aaa;
+            background: #fff;
+            display: none;
+            min-width: 240px;
+            z-index: 10;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+            animation: dropdownFade 0.2s ease-out;
+        }
+
+        @keyframes dropdownFade {
+            from {
+                opacity: 0;
+                transform: translateY(-5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .options.open {
+            display: block;
+        }
+
+        .option-item {
+            padding: 10px;
+            cursor: pointer;
+            display: flex;
+            gap: 10px;
+            border-bottom: 1px solid #eee;
+            transition: background 0.2s;
+        }
+
+        .option-item:last-child {
+            border-bottom: none;
+        }
+
+        .option-item:hover {
+            background: #f2f4f7;
+        }
+
+        .icon {
+            font-size: 22px;
+        }
+
+        .option-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .option-title {
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        .option-desc {
+            font-size: 12px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Custom Dropdown</h1>
+
+    <div class="dropdown" id="custom-dropdown">
+        <div class="toggle-btn" id="dropdown-btn">
+            <span id="selected-text">Select option</span>
+            <span class="arrow" id="arrow">▼</span>
+        </div>
+
+        <div class="options" id="options">
+            <div class="option-item" data-value="1">
+                <span class="icon">📘</span>
+                <div class="option-text">
+                    <span class="option-title">Option 1</span>
+                    <span class="option-desc">This is the first option.</span>
+                </div>
+            </div>
+
+            <div class="option-item" data-value="2">
+                <span class="icon">⚙️</span>
+                <div class="option-text">
+                    <span class="option-title">Option 2</span>
+                    <span class="option-desc">A configuration-related option.</span>
+                </div>
+            </div>
+
+            <div class="option-item" data-value="3">
+                <span class="icon">🚀</span>
+                <div class="option-text">
+                    <span class="option-title">Option 3</span>
+                    <span class="option-desc">Launch or upgrade settings.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Q8.js"></script>
+
+</body>
+
+</html>
